@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi's - Gastronomia Italiana Pura</title>
+    <style>
+        /* ESTILO CLÁSSICO E TRADICIONAL */
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Playfair+Display:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fdfaf5; /* Creme Clássico */
+            font-family: 'Lora', serif;
+            color: #2c1e1a;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+            border-bottom: 3px solid #8d1a1a;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: #8d1a1a;
+            letter-spacing: 4px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* REGRA DO LAYOUT DIAGONAL */
+        .section-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 120px;
+        }
+
+        .section-row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .image-block {
+            flex: 0 0 50%;
+        }
+
+        .image-block img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 15px 15px 0px #e0c58e;
+            transition: transform 0.3s ease;
+        }
+
+        .image-block img:hover {
+            transform: scale(1.02);
+        }
+
+        .text-block {
+            flex: 0 0 42%;
+            padding: 20px;
+        }
+
+        .text-block h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #8d1a1a;
+        }
+
+        .text-block p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .awards-badge {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 1px solid #8d1a1a;
+            color: #8d1a1a;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        /* SEÇÃO DE CONTATO */
+        .contact-info {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #e0c58e;
+        }
+
+        .contact-info h2 {
+            font-family: 'Playfair Display', serif;
+            color: #8d1a1a;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .contact-item p {
+            font-size: 1.1rem;
+        }
+
+        .btn-reserva {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background-color: #8d1a1a;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        .btn-reserva:hover {
+            background-color: #5a1111;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .section-row, .section-row:nth-child(even) {
+                flex-direction: column;
+            }
+            .image-block, .text-block {
+                flex: 0 0 100%;
+                width: 100%;
+            }
+            .image-block img {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+            .contact-details {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LUIGI'S</h1>
+        <p>A Verdadeira Tradição Italiana</p>
+    </header>
+
+    <div class="container">
+
+        <section class="section-row">
+            <div class="image-block">
+                <img src="C:\Users\CAMARGO\Desktop\pwi-Vinicius.Rabello2026\imagens\jantar.jpg" alt="Jantar Romântico">
+            </div>
+            <div class="text-block">
+                <h2>Ambiente Romântico</h2>
+                <p>No Luigi's, cada detalhe é pensado para proporcionar momentos inesquecíveis. Nossa iluminação suave e seleção de vinhos criam o cenário perfeito para casais que buscam a essência do romantismo italiano.</p>
+                <p>Sinta o sabor da Itália em um ambiente acolhedor e sofisticado.</p>
+            </div>
+        </section>
+
+        <section class="section-row">
+            <div class="image-block">
+                <img src="C:\Users\CAMARGO\Desktop\pwi-Vinicius.Rabello2026\imagens\image_aff2a3.jpg" alt="Mesa de Família">
+            </div>
+            <div class="text-block">
+                <h2>Coração da Família</h2>
+                <p>Nossa mesa é o lugar onde gerações se encontram. Para nós, cozinhar é um ato de amor compartilhado entre pais, filhos e amigos. No Luigi's, você faz parte da nossa grande família italiana.</p>
+                <div class="awards-badge">Ambiente Premiado pela Hospitalidade</div>
+            </div>
+        </section>
+
+        <section class="section-row">
+            <div class="image-block">
+                <img src="C:\Users\CAMARGO\Desktop\pwi-Vinicius.Rabello2026\imagens\image_aff39f.jpg" alt="Parmegiana Tradicional">
+            </div>
+            <div class="text-block">
+                <h2>Nossa Premiada Parmegiana</h2>
+                <p>Preparada com o método tradicional e molho de tomates apurados por horas, nossa parmegiana é o orgulho da casa. Um prato que carrega a história da nossa cozinha.</p>
+                <p>Vencedora do prêmio de melhor cozinha tradicional da região nos últimos 2 anos.</p>
+            </div>
+        </section>
+
+        <section class="section-row">
+            <div class="image-block">
+                <img src="C:\Users\CAMARGO\Desktop\pwi-Vinicius.Rabello2026\imagens\image_afeedf.jpg" alt="Pizza Deliciosa">
+            </div>
+            <div class="text-block">
+                <h2>A Verdadeira Pizza Italiana</h2>
+                <p>Massa leve, fermentação natural e ingredientes de primeiríssima qualidade. Cada pizza que sai do nosso forno é uma homenagem às clássicas pizzarias de Nápoles.</p>
+                <p>Venha descobrir por que nossa pizza é considerada um patrimônio do bairro.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="contact-info">
+        <div class="container">
+            <h2>Faça sua Reserva</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h3>Onde Estamos</h3>
+                    <p>Rua Juventus, 150 - Mooca</p>
+                    <p>São Paulo - SP</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Contato Direto</h3>
+                    <p>Telefone: (11) 2345-6789</p>
+                    <p>WhatsApp: (11) 98765-4321</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Horários</h3>
+                    <p>Terça a Domingo</p>
+                    <p>12h às 15h | 19h às 23h</p>
+                </div>
+            </div>
+            <a href="https://wa.me/5511987654321" class="btn-reserva" target="_blank">Reservar Mesa via WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LUIGI'S - Gastronomia Italiana Pura</p>
+        <p>Orgulhosamente servindo a tradição italiana.</p>
+    </footer>
+
+</body>
+</html>

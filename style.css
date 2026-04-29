@@ -1,0 +1,93 @@
+/*Reset*/
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+/*Menu principal*/
+.menu{
+    display:flex;
+    justify-content: space-between;/*separa a logo e o menu*/
+    align-items: center;
+    background-color: #eee;
+    padding: 15px 30px;   
+}
+/*Logo*/
+.logo {
+    color: red
+    font-size: 24px;
+    font-weight: bold;
+
+}
+/*Lista*/
+.menu-links{
+    list-style: none;
+    display:flex;
+    gap: 25px;/*espaço entre os itens*/
+}
+/*Link*/
+.menu-links a{
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+    transition: 0.3s;
+}
+/*Hover (efeito ao passar o mouse*/
+.menu-links a:hover{
+    color: red;
+}
+/*Item ativo (Inicio)*/
+.menu-links .ativo{
+    color: red ;
+    font-weight: bold;
+}
+/*Footer*/
+/*Barra vermelha superior*/
+.barra-alerta{
+    background-color: #a8001c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+/*Container principal do footer*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+/*Logo*/
+.footer-logo h2{
+    color: red;
+}
+/*Link do site*/
+.footer-link{
+    display; flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    .footer-link a{
+        text-decoration: none;
+        color: #444;
+        font-size: 14px;
+    }
+.footer-link a:houver{
+    color: #a8001c;
+}
+/*Redes Sociais*/
+.footer-redes{
+    display: flex;
+    gap: 15px;
+}
+.footer-redes a{
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+.footer-redes a:hover{
+    color: #a8001c;
+
+}

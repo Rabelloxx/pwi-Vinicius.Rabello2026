@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;1,400&display=swap');
+
+/* =====================
+   Página: Nossa História
+   historia.css — não interfere no style.css principal
+   ===================== */
+
+.historia-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+  font-family: 'Lora', Georgia, serif;
+  color: #1a1714;
+  animation: h-fadeIn 0.8s ease both;
+}
+
+@keyframes h-fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Header da história */
+.historia-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.historia-icon {
+  display: block;
+  font-size: 52px;
+  margin-bottom: 0.75rem;
+}
+
+.historia-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #1a1714;
+}
+
+.historia-subtitle {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #6b6359;
+}
+
+/* Capítulos */
+.capitulo {
+  margin-bottom: 3rem;
+}
+
+.capitulo-label {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6b6359;
+  margin-bottom: 0.4rem;
+}
+
+.capitulo-titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: #1a1714;
+  margin-bottom: 1rem;
+}
+
+.capitulo-linha {
+  width: 40px;
+  height: 1px;
+  background: rgba(0,0,0,0.25);
+  margin-bottom: 1.25rem;
+}
+
+.capitulo p {
+  font-size: 15.5px;
+  line-height: 1.9;
+  color: #1a1714;
+  margin-bottom: 1rem;
+}
+
+/* Citação / Pull quote */
+.citacao {
+  border-left: 2px solid #8b3a2a;
+  margin: 1.75rem 0;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  font-style: italic;
+  font-size: 15.5px;
+  color: #6b6359;
+  line-height: 1.75;
+}
+
+/* Epílogo */
+.epilogo {
+  background: #f2ede4;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 1.75rem 2rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #6b6359;
+  line-height: 1.75;
+}
+
+.epilogo-autor {
+  margin-top: 0.65rem;
+  font-size: 13px;
+  font-style: normal;
+  color: #6b6359;
+  letter-spacing: 0.03em;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .historia-title {
+    font-size: 32px;
+  }
+
+  .capitulo-titulo {
+    font-size: 19px;
+  }
+
+  .historia-wrap {
+    padding: 2rem 1rem 4rem;
+  }
+}

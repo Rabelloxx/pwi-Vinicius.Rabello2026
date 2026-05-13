@@ -1,0 +1,126 @@
+/*Reset Basico*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+};
+    /*responsivo*/
+@media(max-widht:600px){
+    .cardapio{
+        padding: 2px 10px; /*espaço em tels pequenas*/
+        .cardapio h2{
+        }
+        .cardapio p {
+            font-size: 12px;
+        }
+        }
+    }
+    /*Menu Principal*/
+    .menu{
+        display: flex;
+        justify-content:  space-between;/*Separa o logo e menu*/
+        align-items: center;
+        background-color: green;
+        padding: 15px 30px;
+    }
+    /*Logo*/
+    .logo{
+        color:whitesmoke;
+        font-size: 24px;
+        font-weight: bold;
+    }
+/*Lista*/
+.menu-links{
+    list-style: none;
+    display: flex;
+    gap: 25px/*Espaço entre os itens*/
+}
+.menu-links a{
+    text-decoration: none;
+    color:#eee;
+    font-size: 16px;
+    transition: 0.3s;    
+}
+.menu-links a :hover{
+    color:yellow;
+}
+/*RODAPÉ*/
+/*Barra Vermelha*/
+.barra-alerta{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+
+}
+/*Container do rodapé*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 30px;
+    flex-wrap: wrap;    
+}
+.footer-logo h2{*/Logo do Rodapé*/
+    color: red;
+}
+    .footer-link{
+        display: flex;
+        flex-direction: column;
+        gap:10px   
+    }
+  .fotter-link a{
+    text-decoration: none;
+    color: red;
+    font-size: 14px;    
+  }
+  .footer-link a:hover{
+    color:#444;    
+  }
+  /*Redes Sociais*/
+  .footer-redes{
+    display: flex;
+    gap: 15px;     
+  }
+ .footer-redes a{
+    text-decoration: none;
+    color: red;
+    font-size: 14px;    
+ }
+ .fotter-link a:hover{
+    color:#444
+ }
+ .cardapio{
+    display: grid;
+    grid-template-columns: 1fr;    
+ }
+    .bloco{
+        display: grid;
+        grid-template-columns: 1fr 1fr;/*Divice em duas partes: texto/imagem */
+        align-items: center;     
+    }
+    .vermelho{
+        background-color: #7a0000;        
+
+    }
+    .bege{
+        background-color: #d8c9a3;        
+    }
+.texto{
+    padding: 40px;    
+}
+.texto h2{
+    font-size: 28px;
+    margin-bottom: 15px;    
+}
+.texto p{
+    font-size: 14px;
+    line-height: 1.5;    
+}
+.imagem img{
+    width: 300px;    
+    weight: 300px;
+    object-fit: cover;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio e Sorteio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pratos do Dia</h1>
+        <button onclick="mostrarPratos()">Mostrar Cardapio</button>
+        <div id="resultado"></div>
+        
+        <script src="prato.js"></script>
+        
+        <div class="container">
+            <h1>Bebidas do Dia</h1>
+            <button onclick="mostrarBebidas()">Mostrar Bebidas</button>
+            <div id="resultadob"></div>
+        </div>
+
+        <h1>Escolha seu prato pelo número</h1>
+        <input type="number" id="numeroPrato" placeholder="Digite o numero do Prato">
+        <button onclick="escolherPrato()">Escolher Prato</button>
+        <div id="resultado2"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="container">
+        <h2>Sorteio de Pratos</h2>
+        <button onclick="sortearNumero()">Sortear!</button>
+        <p id="resultadoSorteio">Clique para descobrir seu prêmio!</p>
+    </div>
+
+</body>
+</html>5
